@@ -1,0 +1,37 @@
+@import "breakpoint/stylesheets/breakpoint";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "compass";
+
+body {
+	background-color: #fff;
+}
+
+.bar-dark {
+	border-color: $primary-color !important;
+	background-image: none !important;
+}
+
+ion-content {
+	z-index: 99999;
+}
+
+a {
+	text-decoration: none !important;
+	color: #fff;
+}
+//media query
+.account {
+	ion-content {
+		margin-top: 64%;
+		@include breakpoint($iphone6) {
+			margin-top: 53%;
+		}
+	}
+}
+
+
+.bill {
+	ion-content {
+		margin-top: 35%;
+	}
+}

@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-dsadas
-  <script src="js/main.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>我的鸡毛</title> 
+    <link href="css/ionic.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/ionic.bundle.min.js"></script>
+  </head>
+  <body ng-app="ionic" class="account">
+		<div class="bar bar-header bar-positive header">
+	  		<button class="button button-icon icon ion-ios-arrow-left"></button>
+	  		<div class="h1 title">我的鸡毛</div>
+	  	</div>
+	  	<!-- header -->
+	  	<li class="item header-block" style="margin-top:40px;">
+	      <p>6739</p>
+	      <p>结余</p>
+	      <p><strong>12789</strong><strong>6050</strong></p>
+	      <p><span>收入</span><span>支出</span></p>
+	    </li>
+	    <!-- header-block -->
+	    <ion-content >
+			<ion-list>
+				<ion-item ui-sref="#" class="a-item item-icon-right" nav-transition="ios">
+					<p><span>今天</span><span>+10</span><span>-34</span></p>
+					<i class="icon ion-ios-arrow-right"></i>
+				</ion-item>
+			</ion-list>
+	    </ion-content>
+	    <!-- ion-content -->
+  </body>
 </html>

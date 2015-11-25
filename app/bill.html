@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>我的鸡毛</title> 
+    <link href="css/ionic.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/ionic.bundle.min.js"></script>
+  </head>
+  <body ng-app="ionic" class="bill">
+		<div class="bar bar-header bar-dark" style="display:none;">
+	  		<button class="button button-icon icon ion-ios-arrow-left"></button>
+	  		<div class="h1 title">鸡毛账单</div>
+	  		<button class="button button-icon "><img src="img/share.png" style="max-width:60%;height:auto;"></button>
+	  	</div>
+	  	<!-- header -->
+	  	<li class="item header-block-dark " style="margin-top:40px;">
+	      <ul>
+	      	<li><small>7月21日</small><br>本日 <i class="ion ion-arrow-down-b"></i></li>
+	      	<li><small>赚了</small><br>40鸡毛</li>
+	      	<li><small>花了</small><br>500鸡毛</li>
+	      </ul>
+	    </li>
+	    <!-- header-block -->
+	    <ion-content class="bill-content">
+	    	<div class="gq-tab">
+	    		<a class="gq-tab-active" data-va="1">统计</a>
+	    		<a data-va="2">明细</a>
+	    	</div>
+	    	<!-- tab -->
+			<div>
+				<ion-list id="bill-chart1" class="padding cysm" style="display:none;">
+				<div class="bill-circle">
+					<h4>收入</h4>
+					<div></div>
+				</div>
+				<div class="bill-circle">
+					<h4>支出</h4>
+					<div></div>
+				</div>
+			</ion-list>
+			<ion-list id="bill-chart2"  style="display:none;">
+				<ion-item ui-sref="#" class="bill-item item-icon-right" nav-transition="ios">
+					<p><span>每日签到<br><small>2015-11-25 11:37</small></span><span>+10</span></p>
+				</ion-item>
+			</ion-list>
+			</div>
+
+
+			<div class="list">
+			  <label class="item item-radio">
+			    <input type="radio" name="group">
+			    <div class="item-content">
+			      本日
+			    </div>
+			    <i class="radio-icon ion-ios-checkmark-outline" style="color:#37c12c"></i>
+			  </label>
+			  
+			</div>
+	    </ion-content>
+	    <!-- ion-content -->
+
+<script>
+	$(document).ready(function() {
+		$('.gq-tab a').click(function() {
+			$(this).addClass('gq-tab-active').siblings().removeClass('gq-tab-active');
+			var tab = $(this).attr('data-va');
+			$('#bill-chart'+tab).addClass('cysm').siblings().removeClass('cysm');
+		});
+
+		if ($('.bar-header').hide()) {
+			$('body').css('margin-top','-41px');
+			$('.bill-content').css('margin-top','25%');
+		}
+	})
+</script>
+  </body>
+</html>

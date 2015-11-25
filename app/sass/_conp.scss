@@ -1,0 +1,174 @@
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "compass";
+
+
+//header 
+
+.header {
+	background-color: $primary-color !important;
+	border-color: $primary-color !important;
+	background-image: none !important;
+}
+
+//header-block
+
+.header-block {
+	background-color: $primary-color !important;
+	p {
+		color: #fff;
+		font-size: .8rem;
+		&:nth-child(1) {
+			font-size: 2.5rem;
+			padding-top: 2%;
+			padding-bottom: 5%;
+			margin-left: -1%;
+		}
+		&:nth-child(3) {
+			font-size: 1.5rem;
+			padding-top: 10%;
+			margin-left: -1%;
+			strong {
+				display: inline-block;
+				text-decoration: none;
+				font-weight: normal;
+				&:nth-child(1) {
+					margin-right: 20%;
+				}
+			}	
+		}
+		&:nth-child(4) {
+			span {
+				display: inline-block;
+				&:nth-child(1) {
+					margin-right: 33%;
+				}
+			}
+		}
+	}
+}
+
+//a-item
+
+.a-item {
+	.ion-ios-arrow-right {
+		color: #888;
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+		span {
+			display: inline-block;
+			width: 33%;
+			text-align: center;
+			&:nth-child(1) {
+				color: #8f8f8f;
+				text-align: left;
+			}
+			&:nth-child(2) {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+//header-block-dark
+
+.header-block-dark {
+	background-color: $dark-color;
+	ul {
+		color: #fff;
+		list-style: none;
+		text-align: center;
+		@include display(flex);
+		li {
+			width: 33.333333%;
+			border-right: 1px dotted #7c7c7e;
+			&:last-child {
+				border: none;
+			}
+			small {
+				color: #7c7c7e;
+				font-size: .6rem;
+			}
+		}
+	}
+}
+
+//gq-tab
+
+.gq-tab {
+	width: 70%;
+	margin-top: 5% !important;
+	margin: 0 auto;
+	margin-bottom: 4%;
+	position: relative;
+	@include display(flex);
+	@include flex-direction(row);
+	text-align: center;
+	border-radius:10px;
+	@include align-items(center);
+	@include justify-content(center);
+	border: 2px solid $dark-color;
+
+	a {
+		width: 50%;
+		color: #000;
+		display: inline-block;
+		padding: 2.5% ;
+	}
+}
+
+//bill-circle
+
+.bill-circle {
+	color: #888;
+	position: relative;
+	@include display(flex);
+	@include justify-content(center);
+	h4 {
+		margin-left: -15%;
+	}
+	div {
+		height: 220px;
+		width: 220px;
+		border-radius:50%;
+		background-color: #2A6496;
+		margin-top: 8%;
+	}
+}
+
+//canyouseeme
+
+.cysm {
+	display: block !important;
+}
+
+.gq-tab-active 	{
+	background-color:$dark-color; 
+	color: #fff !important;
+}
+
+
+//bill-item
+
+.bill-item {
+	span {
+		display: inline-block;
+		width: 50%;
+		&:nth-child(1) {
+			font-size: 1rem;
+			color: #000;
+			font-weight: 600;
+			small {
+				color: #8f8f8f;
+				font-weight: normal;
+			}
+		}
+		&:nth-child(2) {
+			text-align: right;
+			margin-top: -10%;
+			font-size: 2rem;
+			color: $primary-color;
+		}
+	}
+}
