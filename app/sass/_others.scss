@@ -6,6 +6,14 @@ body {
 	background-color: #fff;
 }
 
+.input-label {
+	width: auto;
+}
+
+hr {
+	border-color: #fff;
+}
+
 .bar-dark {
 	border-color: $primary-color !important;
 	background-image: none !important;
@@ -22,9 +30,12 @@ a {
 //media query
 .account {
 	ion-content {
-		margin-top: 64%;
+		margin-top: 48%;
 		@include breakpoint($iphone6) {
-			margin-top: 53%;
+			margin-top: 44%;
+		}
+		@include breakpoint(414px) {
+			margin-top: 41%;
 		}
 	}
 }
@@ -32,6 +43,6 @@ a {
 
 .bill {
 	ion-content {
-		margin-top: 35%;
+		margin-top: 18%;
 	}
 }
