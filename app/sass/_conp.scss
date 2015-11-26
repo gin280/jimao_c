@@ -193,8 +193,9 @@
 
 .about-promoter {
 	text-align: center;
-	span {
+	a {
 		color: $primary-color;
+		text-decoration: none;
 		border-bottom: 1px solid $primary-color;
 	}
 }
@@ -210,9 +211,84 @@
 	}
 	p {
 		font-size: .8rem;
+		color: #888;
 	}
 }
 
-//apply-waitting
+//promoterAlter
 
-.promoter .
+.promoterAlter {
+	width: 65%;
+	// background-color: blue;
+	text-align: center;
+	position: fixed;
+	top: 32%;
+	left: 17.5%;
+	padding: 4% 3% 3% 3%;
+	z-index: 9999999;
+	display: none;
+	p {
+		color: #888;
+	}
+	button {
+		width: 40%;
+	}
+	img {
+		display: block;
+		position: absolute;
+		top: -9%;
+		right: -6%;
+		width: 14%;
+	}
+}
+
+//superTextarea
+
+.superTextarea {
+	height: 90px !important;
+	span,textarea {
+		height: 100%;
+		padding-right: 4%;
+	}
+}
+
+//tab
+
+.promoter .tab {
+	ul {
+		@include display(flex);
+		padding-top: 0;
+		padding-bottom: 0;
+		li {
+			@include flex-grow(1);
+			text-align: center;
+			font-size: 1rem;
+			span {
+				height: 100%;
+				display: inline-block;
+				padding-bottom: 16px;
+				padding-top: 16px;
+				font-weight: bold;
+			}
+		}
+		.tabActive {
+			span {
+				color: $primary-color;
+				
+				border-bottom: 2px solid $primary-color;
+			}
+		}
+	}
+}
+
+//listItem
+
+.listItem {
+	span {
+		display: inline-block;
+		&:last-child {
+			float: right;
+			padding-right: 5%;
+		}
+	}
+}

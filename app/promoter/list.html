@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>推广清单</title> 
+    <link href="../css/ionic.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/ionic.bundle.min.js"></script>
+  </head>
+  <body ng-app="ionic" class="promoter promoterList">
+		<!-- <div class="bar bar-header bar-stable">
+	  		<button class="button button-icon icon ion-ios-arrow-left"></button>
+	  		<div class="h1 title">推广清单</div>
+	  	</div> -->
+	  	<!-- header -->
+	  	<div class="tab ">
+			<ul>
+				<li data-va='1' class="tabActive"><span>成功推广</span><span>(12)</span></li>
+				<li data-va='2'><span>待审核的</span><span>(23)</span></li>
+				<li data-va='3'><span>未通过的</span><span>(34)</span></li>
+			</ul>
+		</div>
+	  	<ion-content style="margin-top:53px;">
+			<div class="tab-content">
+				<div id="promoterTabContent1">
+					<div class="list">
+					  <div class="item item-divider">
+					      2015-07-02 
+					  </div>
+					  <a class="item listItem" href="#">
+					   <span>138****8907</span><span>+10</span>
+					  </a>
+					  <a class="item listItem" href="#">
+					   <span>138****8907</span><span>+10</span>
+					  </a>
+					  <a class="item listItem" href="#">
+					   <span>138****8907</span><span>+10</span>
+					  </a>
+					</div>
+				</div>
+				<div id="promoterTabContent2" style="display:none;">
+					2
+				</div>
+				<div id="promoterTabContent3" style="display:none;">
+					3
+				</div>
+			</div>
+	  	</ion-content>
+	  	<div class="bar bar-footer bar-assertive">
+		  <div class="title">共计：<span>450</span>鸡毛</div>
+		</div>
+<script>
+	$(document).ready(function() {
+		$('.tab>ul>li').click(function() {
+			$(this).addClass('tabActive').siblings().removeClass('tabActive');
+			var tab = $(this).attr('data-va');
+			$('#promoterTabContent'+tab).show().siblings().hide();
+		});
+
+	})
+</script>
+  </body>
+</html>

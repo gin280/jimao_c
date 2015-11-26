@@ -1,0 +1,73 @@
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "compass";
+
+.promoter.promoterCode {
+	.promoterCodeP {
+		padding-right: 0 !important;
+		color: #888;
+		h4 {
+			color: #888 !important;
+		}
+	}
+	.code-content {
+		&:last-child {
+			p {
+				&:last-child {
+					text-align: center;
+					padding-top: 25%;
+					button {
+						border-radius:30px !important;
+						padding: 0 20px !important;
+					}
+				}
+			}
+		}
+		span {
+			color: $primary-color;
+		}
+	}
+	.header-block-code {
+		background-color: $primary-color;
+		color: #fff;
+		text-align: center;
+		padding-top: 4%;
+		padding-bottom: 3%;
+		p {
+			font-size: .8rem;
+			padding-top: 2%;
+			&:nth-child(1) {
+				font-size: 2.5rem;
+			}
+			&:nth-child(3) {
+				.button{
+					color: #fff !important;
+					font-size: .8rem !important;
+					min-width:80px;
+					min-height:30px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}
+
+.promoter.applyWaitting {
+	background-color: #eaeaea;
+	.applyWaittingContent {
+		p {
+			font-size: 1rem;
+		}
+		.about-promoter {
+			margin-top: 4%;
+		}
+		img {
+			display: inline-block;
+			max-width: 30%;
+			height: auto;
+			padding-top: 15%;
+			padding-bottom: 5%;
+		}
+		text-align: center;
+		color: #888;
+	}
+}

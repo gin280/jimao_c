@@ -9,12 +9,12 @@
     <script src="../js/ionic.bundle.min.js"></script>
   </head>
   <body ng-app="ionic" class="promoter">
-		<div class="bar bar-header bar-stable">
+		<!-- <div class="bar bar-header bar-stable">
 	  		<button class="button button-icon icon ion-ios-arrow-left"></button>
 	  		<div class="h1 title">申请小区推广员</div>
-	  	</div>
+	  	</div> -->
 	  	<!-- header -->
-	  	<ion-content style="margin-top:40px;">
+	  	<ion-content>
 			<form action="">
 			<div class="list">
 			  <label class="item item-input">
@@ -42,9 +42,12 @@
 			    <input type="text" placeholder="输入推荐你加入的推广编码（选填） ">
 			  </label>
 			  <!-- item -->
-			  <label class="item item-input">
-			  	<span class="input-label">推荐码</span>
-			    <textarea placeholder="为了更好的审批通过作小区推广员，可以 简单阐述下你在此小区的优势，如你是物 业、小区业主群管理员等等（选填） "></textarea>
+			  <label class="item item-input superTextarea">
+
+			  		<span class="input-label">个人优势</span>
+			    	<textarea placeholder="为了更好的审批通过作小区推广员，可以简单阐述下你在此小区的优势，如你是物业、小区业主群管理员等等（选填）
+					 "></textarea>
+
 			  </label>
 			  <!-- item -->
 			  <div class="padding">
@@ -52,12 +55,21 @@
 				  提交审核
 				</button>
 			  </div>
-			  <div class="about-promoter"><span>关于小区推广员？</span></div>
+			  <div class="about-promoter"><a href="javascript:void(0);">关于小区推广员？</a></div>
 			  
 			</div>
 			<!-- list -->
 		</form>
 		<!-- form -->
+
+		<div class="promoterAlter">
+			<h3>提示</h3>
+			<p>客官，已成功提交，审核需3个工作日 结果会有专人通知，请耐心等待哦！ </p>
+			<button class="button button-assertive">
+			  确认
+			</button>
+			<img src="../img/close.png">
+		</div>
 	  	</ion-content>
   </body>
 </html>

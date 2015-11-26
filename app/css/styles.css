@@ -1,71 +1,443 @@
-/*
-Error: Invalid CSS after ".promoter .": expected "{", was ""
-        on line 218 of F:/kass/jimao/jimao_c/app/sass/_conp.scss
-        from line 5 of F:/kass/jimao/jimao_c/app/sass/styles.scss
+/* line 5, ../sass/_others.scss */
+body {
+  background-color: #fff;
+}
 
-213: 	}
-214: }
-215: 
-216: //apply-waitting
-217: 
-218: .promoter .
+/* line 9, ../sass/_others.scss */
+.input-label {
+  width: auto;
+}
 
-Backtrace:
-F:/kass/jimao/jimao_c/app/sass/_conp.scss:218
-F:/kass/jimao/jimao_c/app/sass/styles.scss:5
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1163:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:632:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/engine.rb:309:in `to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/bin/compass:44:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby193/bin/compass:23:in `load'
-C:/Ruby193/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \".promoter .\": expected \"{\", was \"\"\A         on line 218 of F:/kass/jimao/jimao_c/app/sass/_conp.scss\A         from line 5 of F:/kass/jimao/jimao_c/app/sass/styles.scss\A \A 213: 	}\A 214: }\A 215: \A 216: //apply-waitting\A 217: \A 218: .promoter ."; }
+/* line 13, ../sass/_others.scss */
+hr {
+  border-color: #fff;
+}
+
+/* line 17, ../sass/_others.scss */
+.bar-dark {
+  border-color: #f34b3f !important;
+  background-image: none !important;
+}
+
+/* line 22, ../sass/_others.scss */
+ion-content {
+  z-index: 99999;
+}
+
+/* line 26, ../sass/_others.scss */
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+/* line 32, ../sass/_others.scss */
+.account ion-content {
+  margin-top: 48%;
+}
+@media (min-width: 375px) {
+  /* line 32, ../sass/_others.scss */
+  .account ion-content {
+    margin-top: 44%;
+  }
+}
+@media (min-width: 414px) {
+  /* line 32, ../sass/_others.scss */
+  .account ion-content {
+    margin-top: 41%;
+  }
+}
+
+/* line 45, ../sass/_others.scss */
+.bill ion-content {
+  margin-top: 18%;
+}
+
+/* line 7, ../sass/_conp.scss */
+.header {
+  background-color: #f34b3f !important;
+  border-color: #f34b3f !important;
+  background-image: none !important;
+}
+
+/* line 15, ../sass/_conp.scss */
+.header-block {
+  background-color: #f34b3f !important;
+}
+/* line 17, ../sass/_conp.scss */
+.header-block p {
+  color: #fff;
+  font-size: .8rem;
+}
+/* line 20, ../sass/_conp.scss */
+.header-block p:nth-child(1) {
+  font-size: 2.5rem;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-left: -1%;
+}
+/* line 26, ../sass/_conp.scss */
+.header-block p:nth-child(3) {
+  font-size: 1.5rem;
+  padding-top: 6%;
+  margin-left: -1%;
+}
+/* line 30, ../sass/_conp.scss */
+.header-block p:nth-child(3) span {
+  width: 50%;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+}
+/* line 35, ../sass/_conp.scss */
+.header-block p:nth-child(3) span small {
+  font-size: .8rem;
+  padding-left: 2.5%;
+}
+
+/* line 51, ../sass/_conp.scss */
+.a-item .ion-ios-arrow-right {
+  color: #888;
+  font-size: 1.5rem;
+}
+/* line 55, ../sass/_conp.scss */
+.a-item p {
+  font-size: 1rem;
+}
+/* line 57, ../sass/_conp.scss */
+.a-item p span {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+/* line 61, ../sass/_conp.scss */
+.a-item p span:nth-child(1) {
+  color: #8f8f8f;
+  text-align: left;
+}
+/* line 65, ../sass/_conp.scss */
+.a-item p span:nth-child(2) {
+  color: #f34b3f;
+}
+
+/* line 74, ../sass/_conp.scss */
+.header-block-dark {
+  background-color: #444;
+}
+/* line 76, ../sass/_conp.scss */
+.header-block-dark ul {
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 81, ../sass/_conp.scss */
+.header-block-dark ul li {
+  width: 33.333333%;
+  border-right: 1px dotted #7c7c7e;
+}
+/* line 84, ../sass/_conp.scss */
+.header-block-dark ul li:last-child {
+  border: none;
+}
+/* line 87, ../sass/_conp.scss */
+.header-block-dark ul li small {
+  color: #7c7c7e;
+  font-size: .6rem;
+}
+
+/* line 97, ../sass/_conp.scss */
+.gq-tab {
+  width: 70%;
+  margin-top: 5% !important;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border: 2px solid #444;
+}
+/* line 111, ../sass/_conp.scss */
+.gq-tab a {
+  width: 50%;
+  color: #000;
+  display: inline-block;
+  padding: 2.5%;
+}
+
+/* line 121, ../sass/_conp.scss */
+.bill-circle {
+  color: #888;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 126, ../sass/_conp.scss */
+.bill-circle h4 {
+  margin-left: -15%;
+}
+/* line 129, ../sass/_conp.scss */
+.bill-circle div {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background-color: #2A6496;
+  margin-top: 8%;
+}
+
+/* line 140, ../sass/_conp.scss */
+.cysm {
+  display: block !important;
+}
+
+/* line 144, ../sass/_conp.scss */
+.gq-tab-active {
+  background-color: #444;
+  color: #fff !important;
+}
+
+/* line 153, ../sass/_conp.scss */
+.bill-item span {
+  display: inline-block;
+  width: 50%;
+}
+/* line 156, ../sass/_conp.scss */
+.bill-item span:nth-child(1) {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+}
+/* line 160, ../sass/_conp.scss */
+.bill-item span:nth-child(1) small {
+  color: #8f8f8f;
+  font-weight: normal;
+}
+/* line 165, ../sass/_conp.scss */
+.bill-item span:nth-child(2) {
+  text-align: right;
+  margin-top: -10%;
+  font-size: 2rem;
+  color: #f34b3f;
+}
+
+/* line 177, ../sass/_conp.scss */
+.promoter_textarea span {
+  display: inline-block;
+}
+/* line 180, ../sass/_conp.scss */
+.promoter_textarea input {
+  padding-left: 4%;
+  margin-right: 20%;
+  margin-top: -1%;
+  color: #aaa !important;
+  font-size: .9rem;
+  white-space: normal;
+}
+
+/* line 194, ../sass/_conp.scss */
+.about-promoter {
+  text-align: center;
+}
+/* line 196, ../sass/_conp.scss */
+.about-promoter a {
+  color: #f34b3f;
+  text-decoration: none;
+  border-bottom: 1px solid #f34b3f;
+}
+
+/* line 205, ../sass/_conp.scss */
+.promoter .about-content {
+  padding-left: 5%;
+  padding-right: 20%;
+  padding-top: 1%;
+}
+/* line 209, ../sass/_conp.scss */
+.promoter .about-content:last-child {
+  padding-bottom: 40%;
+}
+/* line 212, ../sass/_conp.scss */
+.promoter .about-content p {
+  font-size: .8rem;
+  color: #888;
+}
+
+/* line 220, ../sass/_conp.scss */
+.promoterAlter {
+  width: 65%;
+  text-align: center;
+  position: fixed;
+  top: 32%;
+  left: 17.5%;
+  padding: 4% 3% 3% 3%;
+  z-index: 9999999;
+  display: none;
+}
+/* line 230, ../sass/_conp.scss */
+.promoterAlter p {
+  color: #888;
+}
+/* line 233, ../sass/_conp.scss */
+.promoterAlter button {
+  width: 40%;
+}
+/* line 236, ../sass/_conp.scss */
+.promoterAlter img {
+  display: block;
+  position: absolute;
+  top: -9%;
+  right: -6%;
+  width: 14%;
+}
+
+/* line 247, ../sass/_conp.scss */
+.superTextarea {
+  height: 90px !important;
+}
+/* line 249, ../sass/_conp.scss */
+.superTextarea span, .superTextarea textarea {
+  height: 100%;
+  padding-right: 4%;
+}
+
+/* line 258, ../sass/_conp.scss */
+.promoter .tab ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 262, ../sass/_conp.scss */
+.promoter .tab ul li {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1rem;
+}
+/* line 266, ../sass/_conp.scss */
+.promoter .tab ul li span {
+  height: 100%;
+  display: inline-block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-weight: bold;
+}
+/* line 275, ../sass/_conp.scss */
+.promoter .tab ul .tabActive span {
+  color: #f34b3f;
+  border-bottom: 2px solid #f34b3f;
+}
+
+/* line 287, ../sass/_conp.scss */
+.listItem span {
+  display: inline-block;
+}
+/* line 289, ../sass/_conp.scss */
+.listItem span:last-child {
+  float: right;
+  padding-right: 5%;
+}
+
+/* line 5, ../sass/_promoter.scss */
+.promoter.promoterCode .promoterCodeP {
+  padding-right: 0 !important;
+  color: #888;
+}
+/* line 8, ../sass/_promoter.scss */
+.promoter.promoterCode .promoterCodeP h4 {
+  color: #888 !important;
+}
+/* line 15, ../sass/_promoter.scss */
+.promoter.promoterCode .code-content:last-child p:last-child {
+  text-align: center;
+  padding-top: 25%;
+}
+/* line 18, ../sass/_promoter.scss */
+.promoter.promoterCode .code-content:last-child p:last-child button {
+  border-radius: 30px !important;
+  padding: 0 20px !important;
+}
+/* line 25, ../sass/_promoter.scss */
+.promoter.promoterCode .code-content span {
+  color: #f34b3f;
+}
+/* line 29, ../sass/_promoter.scss */
+.promoter.promoterCode .header-block-code {
+  background-color: #f34b3f;
+  color: #fff;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 3%;
+}
+/* line 35, ../sass/_promoter.scss */
+.promoter.promoterCode .header-block-code p {
+  font-size: .8rem;
+  padding-top: 2%;
+}
+/* line 38, ../sass/_promoter.scss */
+.promoter.promoterCode .header-block-code p:nth-child(1) {
+  font-size: 2.5rem;
+}
+/* line 42, ../sass/_promoter.scss */
+.promoter.promoterCode .header-block-code p:nth-child(3) .button {
+  color: #fff !important;
+  font-size: .8rem !important;
+  min-width: 80px;
+  min-height: 30px;
+  line-height: 1;
+}
+
+/* line 54, ../sass/_promoter.scss */
+.promoter.applyWaitting {
+  background-color: #eaeaea;
+}
+/* line 56, ../sass/_promoter.scss */
+.promoter.applyWaitting .applyWaittingContent {
+  text-align: center;
+  color: #888;
+}
+/* line 57, ../sass/_promoter.scss */
+.promoter.applyWaitting .applyWaittingContent p {
+  font-size: 1rem;
+}
+/* line 60, ../sass/_promoter.scss */
+.promoter.applyWaitting .applyWaittingContent .about-promoter {
+  margin-top: 4%;
+}
+/* line 63, ../sass/_promoter.scss */
+.promoter.applyWaitting .applyWaittingContent img {
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
